@@ -26,10 +26,14 @@
         <Bug pattern="LSC_LITERAL_STRING_COMPARISON"/>
     </Match>
 
-    <!-- specific exceptions -->
-    <Match classregex="org\.wikimedia\.search\.extra\.regex\.SourceRegexQueryBuilder.*">
-        <!-- In this case, an array is accessed with known locations in array -->
+    <Match>
+        <!-- We have only seen false positives with this rule, so let's ignore it. -->
         <Bug pattern="CLI_CONSTANT_LIST_INDEX"/>
+    </Match>
+
+    <Match>
+        <!-- Semantic isn't that confusing. -->
+        <Bug pattern="CFS_CONFUSING_FUNCTION_SEMANTICS" />
     </Match>
 
 </FindBugsFilter>
