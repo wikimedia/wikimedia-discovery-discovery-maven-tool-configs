@@ -6,19 +6,6 @@
         <module name="SuppressWarningsHolder" />
 
         <!-- Javadoc -->
-        <module name="JavadocType">
-            <property name="allowMissingParamTags" value="true" /> <!-- Sometimes its just overkill -->
-            <property name="excludeScope" value="private" />
-        </module>
-        <module name="JavadocMethod">
-            <property name="allowUndeclaredRTE" value="true" /> <!-- You aren't supposed to declare these anyway... -->
-            <property name="allowMissingReturnTag" value="true" /> <!-- Sometimes its just overkill -->
-            <property name="allowMissingParamTags" value="true" /> <!-- Sometimes its just overkill -->
-            <property name="allowMissingThrowsTags" value="true" /> <!-- Sometimes its just overkill -->
-            <property name="allowMissingPropertyJavadoc" value="true" /> <!-- Sometimes its just overkill -->
-            <property name="tokens" value="METHOD_DEF" /> <!-- Constructors don't always need Javadoc -->
-            <property name="excludeScope" value="private" />
-        </module>
         <module name="JavadocStyle" />
 
         <!-- Formatting -->
