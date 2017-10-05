@@ -26,8 +26,8 @@
     </developers>
 
     <scm>
-        <connection>scm:git:https://gerrit.wikimedia.org/r/discovery/discovery-maven-tool-configs</connection>
-        <developerConnection>scm:git:https://gerrit.wikimedia.org/r/discovery/discovery-maven-tool-configs</developerConnection>
+        <connection>scm:git:https://gerrit.wikimedia.org/r/a/wikimedia/discovery/discovery-maven-tool-configs</connection>
+        <developerConnection>scm:git:ssh://gerrit.wikimedia.org:29418/wikimedia/discovery/discovery-maven-tool-configs</developerConnection>
         <url>https://gerrit.wikimedia.org/r/#/admin/projects/discovery/discovery-maven-tool-configs</url>
     </scm>
 
@@ -161,6 +161,7 @@
                     <version>2.5.3</version>
                     <configuration>
                         <releaseProfiles>release</releaseProfiles>
+                        <preparationGoals>sortpom:sort clean verify</preparationGoals>
                     </configuration>
                 </plugin>
                 <plugin>
