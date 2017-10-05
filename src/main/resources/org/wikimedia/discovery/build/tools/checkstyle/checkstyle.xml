@@ -87,7 +87,6 @@
         <module name="HideUtilityClassConstructor" />
         <!-- This one usually offers good to interesting suggestions but its too much work to implement now. <module name="DesignForExtension"/> -->
         <module name="MutableException" />
-        <module name="UncommentedMain" />
 
         <!-- Really opinionated. Probably wrong. -->
         <module name="ClassFanOutComplexity">
