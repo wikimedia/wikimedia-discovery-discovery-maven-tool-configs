@@ -36,4 +36,11 @@
         <Bug pattern="CFS_CONFUSING_FUNCTION_SEMANTICS" />
     </Match>
 
+    <Match>
+        <!-- While the rule make sense, it is used in a few lambdas where it
+             generates false positives. Since we can't add @SuppressFBWarnings
+             in lambdas, let's disable this rule for the moment. -->
+        <Bug pattern="EC_UNRELATED_CLASS_AND_INTERFACE" />
+    </Match>
+
 </FindBugsFilter>
