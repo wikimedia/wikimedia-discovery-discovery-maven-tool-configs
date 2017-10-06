@@ -6,6 +6,11 @@
     <artifactId>discovery-maven-tool-configs</artifactId>
     <version>1.2-SNAPSHOT</version>
 
+    <name>Discovery maven tool configs</name>
+    <description>Standard configurations for the tools used by the Discovery team.</description>
+
+    <url>https://gerrit.wikimedia.org/r/#/admin/projects/discovery/discovery-maven-tool-configs</url>
+
     <licenses>
         <license>
             <name>The Apache Software License, Version 2.0</name>
