@@ -4,7 +4,7 @@
 
     <groupId>org.wikimedia.discovery</groupId>
     <artifactId>discovery-maven-tool-configs</artifactId>
-    <version>1.3-SNAPSHOT</version>
+    <version>1.3</version>
 
     <name>Discovery maven tool configs</name>
     <description>Standard configurations for the tools used by the Discovery team.</description>
@@ -31,7 +31,7 @@
     <scm>
         <connection>scm:git:https://gerrit.wikimedia.org/r/a/wikimedia/discovery/discovery-maven-tool-configs</connection>
         <developerConnection>scm:git:ssh://gerrit.wikimedia.org:29418/wikimedia/discovery/discovery-maven-tool-configs</developerConnection>
-        <tag>HEAD</tag>
+        <tag>discovery-maven-tool-configs-1.3</tag>
         <url>https://gerrit.wikimedia.org/r/#/admin/projects/discovery/discovery-maven-tool-configs</url>
     </scm>
 
@@ -170,7 +170,8 @@
                     <configuration>
                         <releaseProfiles>release</releaseProfiles>
                         <preparationGoals>sortpom:sort clean verify</preparationGoals>
-                        <goals>deploy</goals> <!-- explicitely disable site-deploy -->
+                        <goals>deploy</goals>
+                        <!-- explicitely disable site-deploy -->
                     </configuration>
                 </plugin>
                 <plugin>
