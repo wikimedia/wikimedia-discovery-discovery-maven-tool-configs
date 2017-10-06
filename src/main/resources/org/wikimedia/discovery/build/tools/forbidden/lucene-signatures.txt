@@ -1,0 +1,17 @@
+@defaultMessage Reference management is tricky, leave it to SearcherManager
+org.apache.lucene.index.IndexReader#decRef()
+org.apache.lucene.index.IndexReader#incRef()
+org.apache.lucene.index.IndexReader#tryIncRef()
+
+@defaultMessage Use Lucene.parseLenient instead it strips off minor version
+org.apache.lucene.util.Version#parseLeniently(java.lang.String)
+
+@defaultMessage Spawns a new thread which is solely under lucenes control use ThreadPool#estimatedTimeInMillisCounter instead
+org.apache.lucene.search.TimeLimitingCollector#getGlobalTimerThread()
+org.apache.lucene.search.TimeLimitingCollector#getGlobalCounter()
+
+org.apache.lucene.index.IndexWriter#maybeMerge() @ use Merges#maybeMerge
+org.apache.lucene.index.IndexWriter#forceMerge(int) @ use Merges#forceMerge
+org.apache.lucene.index.IndexWriter#forceMerge(int,boolean) @ use Merges#forceMerge
+org.apache.lucene.index.IndexWriter#forceMergeDeletes() @ use Merges#forceMergeDeletes
+org.apache.lucene.index.IndexWriter#forceMergeDeletes(boolean) @ use Merges#forceMergeDeletes
