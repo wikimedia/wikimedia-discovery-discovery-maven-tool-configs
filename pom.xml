@@ -170,6 +170,7 @@
                     <configuration>
                         <releaseProfiles>release</releaseProfiles>
                         <preparationGoals>sortpom:sort clean verify</preparationGoals>
+                        <goals>deploy</goals> <!-- explicitely disable site-deploy -->
                     </configuration>
                 </plugin>
                 <plugin>
