@@ -43,4 +43,10 @@
         <Bug pattern="EC_UNRELATED_CLASS_AND_INTERFACE" />
     </Match>
 
+    <Match>
+        <!-- We almost always want new lines to be the same on any platform. We
+             send those across network more often than not. -->
+        <Bug pattern="VA_FORMAT_STRING_USES_NEWLINE" />
+    </Match>
+
 </FindBugsFilter>
