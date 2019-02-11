@@ -49,4 +49,11 @@
         <Bug pattern="VA_FORMAT_STRING_USES_NEWLINE" />
     </Match>
 
+    <Match>
+        <!-- Generate false positives on code compiled with Java 11. Let's
+             disable this rule until https://github.com/spotbugs/spotbugs/issues/756
+             is fixed. -->
+        <Bug pattern="RCN_REDUNDANT_NULLCHECK_WOULD_HAVE_BEEN_A_NPE" />
+    </Match>
+
 </FindBugsFilter>
