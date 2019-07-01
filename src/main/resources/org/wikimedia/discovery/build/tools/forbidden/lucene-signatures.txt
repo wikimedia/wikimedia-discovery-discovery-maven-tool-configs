@@ -15,3 +15,7 @@ org.apache.lucene.index.IndexWriter#forceMerge(int) @ use Merges#forceMerge
 org.apache.lucene.index.IndexWriter#forceMerge(int,boolean) @ use Merges#forceMerge
 org.apache.lucene.index.IndexWriter#forceMergeDeletes() @ use Merges#forceMergeDeletes
 org.apache.lucene.index.IndexWriter#forceMergeDeletes(boolean) @ use Merges#forceMergeDeletes
+
+@defaultMessage Collections.sort dumps data into an array, sorts the array and reinserts data into the list, one should rather use Lucene's CollectionUtil sort methods which sort in place
+java.util.Collections#sort(java.util.List)
+java.util.Collections#sort(java.util.List,java.util.Comparator)
