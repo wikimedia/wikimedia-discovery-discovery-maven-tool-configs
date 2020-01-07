@@ -1,0 +1,17 @@
+<code_scheme name="SearchPlatform_Scala" version="173">
+  <ScalaCodeStyleSettings>
+    <option name="importLayout">
+      <array>
+        <option value="java" />
+        <option value="javax" />
+        <option value="_______ blank line _______" />
+        <option value="scala" />
+        <option value="_______ blank line _______" />
+        <option value="all other imports" />
+        <option value="_______ blank line _______" />
+        <option value="spark" />
+      </array>
+    </option>
+    <option name="sortAsScalastyle" value="true" />
+  </ScalaCodeStyleSettings>
+</code_scheme>

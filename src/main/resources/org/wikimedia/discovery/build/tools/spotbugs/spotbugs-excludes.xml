@@ -1,5 +1,9 @@
 <?xml version="1.0"?>
 <FindBugsFilter>
+   <Match>
+       <!-- Disable all rules for scala -->
+       <Source name="~.*\.scala" />
+    </Match>
     <!-- the following bugs are always ignored -->
     <Match>
         <!--
