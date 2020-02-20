@@ -8,8 +8,6 @@
         <option value="scala" />
         <option value="_______ blank line _______" />
         <option value="all other imports" />
-        <option value="_______ blank line _______" />
-        <option value="spark" />
       </array>
     </option>
     <option name="sortAsScalastyle" value="true" />
