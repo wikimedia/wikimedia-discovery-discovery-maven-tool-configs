@@ -2,6 +2,9 @@
         "http://www.puppycrawl.com/dtds/configuration_1_3.dtd">
 <module name="Checker">
     <module name="SuppressWarningsFilter" />
+    <module name="LineLength">
+        <property name="max" value="160" />
+    </module>
     <module name="TreeWalker">
         <module name="SuppressWarningsHolder" />
 
@@ -19,9 +22,6 @@
             <property name="caseIndent" value="0" />
         </module>
         -->
-        <module name="LineLength">
-            <property name="max" value="160" />
-        </module>
         <module name="MethodParamPad" />
         <module name="NoWhitespaceAfter" />
         <module name="NoWhitespaceBefore" />
