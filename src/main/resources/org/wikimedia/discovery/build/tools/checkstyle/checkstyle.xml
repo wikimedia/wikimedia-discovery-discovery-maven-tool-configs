@@ -93,7 +93,9 @@
             <property name="id" value="checkstyle:classfanoutcomplexity"/>
             <property name="max" value="25"/>
         </module>
-        <module name="CyclomaticComplexity" />
+        <module name="CyclomaticComplexity">
+            <property name="switchBlockAsSingleDecisionPoint" value="true"/>
+        </module>
         <module name="NPathComplexity" />
 
     </module>
