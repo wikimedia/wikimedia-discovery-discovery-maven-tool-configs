@@ -4,7 +4,7 @@
 
     <groupId>org.wikimedia.discovery</groupId>
     <artifactId>discovery-maven-tool-configs</artifactId>
-    <version>1.20-SNAPSHOT</version>
+    <version>1.21-SNAPSHOT</version>
 
     <name>Discovery maven tool configs</name>
     <description>Standard configurations for the tools used by the Discovery team.</description>
