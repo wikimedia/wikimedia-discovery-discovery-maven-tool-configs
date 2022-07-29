@@ -53,4 +53,13 @@
         <Bug pattern="VA_FORMAT_STRING_USES_NEWLINE" />
     </Match>
 
+    <Match>
+        <!-- EI_EXPOSE_REP will complain on any mutable parameter / return
+        value. While it make sense to properly hide internal representation
+        for collections (where easy alternatives exist), this rule does not
+        make a lot sense for all classes. -->
+        <Bug pattern="EI_EXPOSE_REP" />
+        <Bug pattern="EI_EXPOSE_REP2" />
+    </Match>
+
 </FindBugsFilter>
