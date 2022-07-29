@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <FindBugsFilter>
-   <Match>
-       <!-- Disable all rules for scala -->
-       <Source name="~.*\.scala" />
+    <Match>
+        <!-- Disable all rules for scala -->
+        <Source name="~.*\.scala"/>
     </Match>
     <!-- the following bugs are always ignored -->
     <Match>
@@ -37,20 +37,20 @@
 
     <Match>
         <!-- Semantic isn't that confusing. -->
-        <Bug pattern="CFS_CONFUSING_FUNCTION_SEMANTICS" />
+        <Bug pattern="CFS_CONFUSING_FUNCTION_SEMANTICS"/>
     </Match>
 
     <Match>
         <!-- While the rule make sense, it is used in a few lambdas where it
              generates false positives. Since we can't add @SuppressFBWarnings
              in lambdas, let's disable this rule for the moment. -->
-        <Bug pattern="EC_UNRELATED_CLASS_AND_INTERFACE" />
+        <Bug pattern="EC_UNRELATED_CLASS_AND_INTERFACE"/>
     </Match>
 
     <Match>
         <!-- We almost always want new lines to be the same on any platform. We
              send those across network more often than not. -->
-        <Bug pattern="VA_FORMAT_STRING_USES_NEWLINE" />
+        <Bug pattern="VA_FORMAT_STRING_USES_NEWLINE"/>
     </Match>
 
     <Match>
@@ -58,8 +58,10 @@
         value. While it make sense to properly hide internal representation
         for collections (where easy alternatives exist), this rule does not
         make a lot sense for all classes. -->
-        <Bug pattern="EI_EXPOSE_REP" />
-        <Bug pattern="EI_EXPOSE_REP2" />
+        <Or>
+            <Bug pattern="EI_EXPOSE_REP"/>
+            <Bug pattern="EI_EXPOSE_REP2"/>
+        </Or>
     </Match>
 
 </FindBugsFilter>
