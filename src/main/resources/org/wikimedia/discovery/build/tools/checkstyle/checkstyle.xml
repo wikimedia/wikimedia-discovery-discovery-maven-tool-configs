@@ -47,6 +47,31 @@
         <module name="UpperEll" /> <!-- Lowercase l is hard to read -->
         <module name="ArrayTypeStyle" />
 
+        <!-- Coding / naming conventions, see https://checkstyle.org/config_naming.html -->
+        <module name="AbbreviationAsWordInName" />
+        <module name="CatchParameterName" />
+        <module name="ClassTypeParameterName">
+            <property name="format" value="^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$" />
+        </module>
+        <module name="ConstantName" />
+        <module name="IllegalIdentifierName" />
+        <module name="InterfaceTypeParameterName">
+            <property name="format" value="^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$" />
+        </module>
+        <module name="LambdaParameterName" />
+        <module name="LocalFinalVariableName" />
+        <module name="LocalVariableName" />
+        <module name="MemberName" />
+        <module name="MethodName" />
+        <module name="MethodTypeParameterName" />
+        <module name="PackageName" />
+        <module name="ParameterName" />
+        <module name="PatternVariableName" />
+        <module name="RecordComponentName" />
+        <module name="RecordTypeParameterName" />
+        <module name="StaticVariableName" />
+        <module name="TypeName" />
+
         <!-- Import -->
         <module name="AvoidStarImport" />
         <module name="IllegalImport" />
@@ -83,7 +108,7 @@
         <!-- This one usually offers good to interesting suggestions but its too much work to implement now. <module name="DesignForExtension"/> -->
         <module name="MutableException" />
 
-        <!-- Really opinionated. Probably wrong. -->
+        <!-- Really opinionated. -->
         <module name="ClassFanOutComplexity">
             <property name="id" value="checkstyle:classfanoutcomplexity"/>
             <property name="max" value="25"/>
