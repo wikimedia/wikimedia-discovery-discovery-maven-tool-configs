@@ -13,16 +13,10 @@
         <module name="JavadocStyle" />
 
         <!-- Formatting -->
-        <!--
-        This check is problematic with lambda until https://github.com/checkstyle/checkstyle/issues/3342
-        is fixed. So let's re-enable it if that ever gets fixed (if anyone is
-        willing to contribute a PR...). Our IDE do a good job of giving us
-        reasonable indentation anyway.
         <module name="Indentation">
             <property name="basicOffset" value="4" />
             <property name="caseIndent" value="0" />
         </module>
-        -->
         <module name="MethodParamPad" />
         <module name="NoWhitespaceAfter" />
         <module name="NoWhitespaceBefore" />
