@@ -6,7 +6,4 @@
 <suppressions>
     <!-- Tests don't need anywhere near that Javadoc that production code does. -->
     <suppress checks="MethodName" files=".*Test.java" />
-    <suppress checks="JavadocType" files=".*Test.java" />
-    <suppress checks="JavadocMethod" files=".*Test.java" />
-    <suppress checks="JavadocVariable" files=".*Test.java" />
 </suppressions>
