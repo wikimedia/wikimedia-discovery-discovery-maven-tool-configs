@@ -13,10 +13,7 @@
         <module name="JavadocStyle" />
 
         <!-- Formatting -->
-        <module name="Indentation">
-            <property name="basicOffset" value="4" />
-            <property name="caseIndent" value="0" />
-        </module>
+        <module name="Indentation" />
         <module name="MethodParamPad" />
         <module name="NoWhitespaceAfter" />
         <module name="NoWhitespaceBefore" />
