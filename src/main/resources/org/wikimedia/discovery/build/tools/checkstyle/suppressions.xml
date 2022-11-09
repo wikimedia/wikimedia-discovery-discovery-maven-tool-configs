@@ -5,5 +5,19 @@
 
 <suppressions>
     <!-- Tests don't need anywhere near that Javadoc that production code does. -->
-    <suppress checks="MethodName" files=".*Test.java" />
+    <suppress checks="MethodName" files="Test.*\.java" />
+    <suppress checks="MethodName" files=".*Test\.java" />
+    <suppress checks="MethodName" files=".*Tests\.java" />
+    <suppress checks="MethodName" files=".*TestCase\.java" />
+    <suppress checks="MethodName" files="IT.*\.java" />
+    <suppress checks="MethodName" files=".*IT\.java" />
+    <suppress checks="MethodName" files=".*ITCase\.java" />
+
+    <suppress checks="ConstantName" files="Test.*\.java" />
+    <suppress checks="ConstantName" files=".*Test\.java" />
+    <suppress checks="ConstantName" files=".*Tests\.java" />
+    <suppress checks="ConstantName" files=".*TestCase\.java" />
+    <suppress checks="ConstantName" files="IT.*\.java" />
+    <suppress checks="ConstantName" files=".*IT\.java" />
+    <suppress checks="ConstantName" files=".*ITCase\.java" />
 </suppressions>
